@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>デジタルコンテンツリンク集</title>
+  <meta name="description" content="児童がよく使うデジタル学習コンテンツへのリンク集" />
+  <style>
+    :root {
+      --radius: 14px;
+      --shadow: 0 6px 18px rgba(0,0,0,.08);
+      --bg: #f7f9fc;
+      --text: #233142;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1976d2, #42a5f5);
+      color: #fff;
+      padding: 28px 16px 26px;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .title-block { text-align: center; }
+    header h1 {
+      margin: 0 0 6px;
+      font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+      letter-spacing: .02em;
+    }
+    header p {
+      margin: 0;
+      opacity: .95;
+      font-size: 1.02rem;
+    }
+    .logo {
+      width: 96px; /* 画像サイズはお好みで */
+      height: auto;
+    }
+
+    /* Main / Buttons */
+    main {
+      max-width: 1040px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+    }
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.2rem;
+    }
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 68px;
+      padding: 1.2rem;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 1.12rem;
+      letter-spacing: .01em;
+      box-shadow: var(--shadow);
+      transition: transform .08s ease, filter .2s ease, box-shadow .2s ease;
+      text-align: center;
+    }
+    .link-btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+    }
+    .link-btn:active {
+      transform: translateY(0);
+      filter: brightness(.97);
+    }
+
+    /* Colors per service */
+    .loilo      { background: #ffb300; } /* ロイロノート */
+    .qrcode     { background: #43a047; } /* ＱＲコード */
+    .kahoot     { background: #7e57c2; } /* カフート */
+    .smilenext  { background: #26a69a; } /* スマイルネクスト */
+    .manapocket { background: #1976d2; } /* 学びポケット */
+    .gclass     { background: #4285f4; } /* Google Classroom */
+    .canva      { background: #00bfa5; } /* Canva */
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: #667;
+      font-size: .92rem;
+      margin-top: 2.5rem;
+      padding-bottom: 2rem;
+    }
+
+    @media (max-width: 420px) {
+      .link-btn { font-size: 1.05rem; min-height: 62px; }
+      .logo { width: 84px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="title-block">
+        <h1>デジタルコンテンツリンク集</h1>
+        <p>よく使う学習サイトへワンクリックでアクセス</p>
+      </div>
+      <!-- ロゴ画像を使う場合は logo.png をリポジトリに追加してください -->
+      <!-- 画像を表示したくない場合は下のimg行を削除してOK -->
+      <img src="logo.png" alt="サイトロゴ" class="logo">
+    </div>
+  </header>
+
+  <main>
+    <div class="button-grid">
+      <a class="link-btn loilo" href="https://loilonote.app/login?hl=ja-JP" target="_blank" rel="noopener noreferrer" aria-label="ロイロノートへ">
+        ロイロノート
+      </a>
+
+      <a class="link-btn qrcode" href="https://qrcode.onl.jp/" target="_blank" rel="noopener noreferrer" aria-label="QRコード作成サイトへ">
+        ＱＲコード
+      </a>
+
+      <a class="link-btn kahoot" href="https://kahoot.it/" target="_blank" rel="noopener noreferrer" aria-label="Kahoot! へ">
+        カフート（Kahoot!）
+      </a>
+
+      <a class="link-btn smilenext" href="https://just-smilenext.jp/app/login?select=true" target="_blank" rel="noopener noreferrer" aria-label="スマイルネクストへ">
+        スマイルネクスト
+      </a>
+
+      <a class="link-btn manapocket" href="https://idp1.ed-cl.com/login?client_id=portal&amp;nonce=aecac91df419b9326b01b095803df98f&amp;prompt=login&amp;redirect_uri=https%3A%2F%2Fed-cl.com%2Fusers%2Fauth%2Fpf_user_admin%2Fcallback&amp;response_type=code&amp;scope=openid+feature%3Aaar+classrooms%3Aread+photo_management%3Aphoto%3Acreate.self+photo_management%3Aphoto%3Adelete.self+photo_management%3Aphoto%3Adelete+photo_management%3Astudent_photo%3Adelete.own+photo_management%3Aschedule_retrieval_context%3Aupdate+photo_management%3Aschedule_retrieval_context%3Aupdate.own+photo_management%3Aschedule_retrieval_context%3Aupdate.participating+photo_management%3Aphoto%3Aread.self+photo_management%3Ashared_photo%3Aread+photo_management%3Ashared_photo%3Aread.participating+photo_management%3Ateacher_only_shared_photo%3Aread+calendar%3Aschedule%3Aread+calendar%3Aschedule%3Awrite+calendar%3Aschedule%3Aread%3Aparticipating+calendar%3Aschedule%3Awrite%3Aown+calendar%3Aschedule_template%3Aread+calendar%3Aschedule_template%3Awrite+aar%3Areflection_entry%3Awrite+aar%3Areflection%3Aread+aar%3Areflection%3Aread%3Aself+aar%3Ateacher_comment%3Aread+aar%3Ateacher_comment%3Aread%3Ato_me+aar%3Ateacher_comment%3Adelete+aar%3Ateacher_comment%3Adelete%3Aself+aar%3Ateacher_comment%3Acreate+aar%3Ateacher_comment%3Acreate%3Aown+aar%3Ateacher_comment%3Aupdate%3Aself&amp;state=6b7bc108b480e51abe6f595944d4d990"
+         target="_blank" rel="noopener noreferrer" aria-label="学びポケットへ">
+        学びポケット
+      </a>
+
+      <a class="link-btn gclass" href="https://classroom.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Classroom へ">
+        Google Classroom
+      </a>
+
+      <a class="link-btn canva" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" aria-label="Canva へ">
+        Canva
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 デジタルコンテンツリンク集</p>
+  </footer>
+</body>
+</html>
